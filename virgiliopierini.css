@@ -1,0 +1,128 @@
+@font-face{
+	font-family:'Helvetica-Neue';
+	src:url("fonts/helvetica-neue.woff2") format("woff2"),url("fonts/helvetica-neue.woff") format("woff");
+	font-weight:400}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-family:"Helvetica-Neue",Helvetica,Arial;
+}
+body {
+  line-height: 1.5;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+.vp-summary{
+  width: 80px;
+  height: 18px;
+  position: absolute;
+  z-index: 100;
+  top: 400px;
+  left: 950px;
+  direction:rtl;
+}
+.vp-picture {
+  width: 471px;
+  height: 306px;
+  position: absolute;
+  z-index: -1;
+  top: 60px;
+  left: 560px;
+}
+.vp-about {
+  max-width: 560px;
+  width: 100%;
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  z-index: 1;
+  display: block;
+}
+h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 33px;
+}
+.vp-about-headline {
+  margin-bottom: 40px;
+  transform: translateY(15px);
+}
+.vp-about-headline em {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(0, 0, 0);
+  padding-bottom: 2px;
+}
+h1 {
+  font-weight: 100;
+  font-size: 23px;
+}
+.vp-about-body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  transform: translateY(15px);
+}
+ul {
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+}
+.vp-about-contact li {
+  line-height: 1.4;
+  transform: translateY(15px);
+}
+a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
