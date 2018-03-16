@@ -4,7 +4,7 @@
     <creator>Gephi 0.9</creator>
     <description></description>
   </meta>
-  <graph defaultedgetype="directed" mode="static">
+  <graph defaultedgetype="directed" mode="dynamic">
     <attributes class="node" mode="static">
       <attribute id="natura" title="NATURA" type="string"></attribute>
     </attributes>
