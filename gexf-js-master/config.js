@@ -63,7 +63,7 @@ GexfJS.setParams({
             Show the edge arrows when the edge is directed
             this setting can't be changed from the User Interface
         */
-    language: false,
+    language: en,
         /*
             Set to an ISO language code to switch the interface to that language.
             Available languages are:
