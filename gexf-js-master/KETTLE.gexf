@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2018-03-16">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="natura" title="NATURA" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="JOB1" label="JOB1">
+        <attvalues>
+          <attvalue for="natura" value="JOB"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-113.66058" y="-201.44865"></viz:position>
+        <viz:color r="255" g="23" b="0"></viz:color>
+      </node>
+      <node id="TR1" label="TR1">
+        <attvalues>
+          <attvalue for="natura" value="TR"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="485.12827" y="163.89098"></viz:position>
+        <viz:color r="0" g="82" b="42"></viz:color>
+      </node>
+      <node id="JOB2" label="JOB2">
+        <attvalues>
+          <attvalue for="natura" value="JOB"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-234.54803" y="-22.045729"></viz:position>
+        <viz:color r="255" g="23" b="0"></viz:color>
+      </node>
+      <node id="TR2" label="TR2">
+        <attvalues>
+          <attvalue for="natura" value="TR"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="124.52792" y="132.796"></viz:position>
+        <viz:color r="0" g="82" b="42"></viz:color>
+      </node>
+      <node id="TABLE1" label="TABLE1">
+        <attvalues>
+          <attvalue for="natura" value="T"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="505.27097" y="304.80518"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="TABLE2" label="TABLE2">
+        <attvalues>
+          <attvalue for="natura" value="T"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-121.760864" y="135.36894"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="TABLE5" label="TABLE5">
+        <attvalues>
+          <attvalue for="natura" value="T"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="178.32846" y="-464.0965"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="TABLE3" label="TABLE3">
+        <attvalues>
+          <attvalue for="natura" value="T"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-352.8033" y="-19.916456"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="TABLE4" label="TABLE4">
+        <attvalues>
+          <attvalue for="natura" value="T"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-470.48282" y="-29.353743"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="9" source="JOB1" target="TR1"></edge>
+      <edge id="10" source="JOB2" target="TR2" weight="2.0"></edge>
+      <edge id="12" source="TR1" target="TABLE1"></edge>
+      <edge id="13" source="TR1" target="TABLE2"></edge>
+      <edge id="14" source="TR1" target="TABLE5"></edge>
+      <edge id="15" source="TR2" target="TABLE3"></edge>
+      <edge id="16" source="TR2" target="TABLE4"></edge>
+      <edge id="17" source="TR2" target="TABLE5"></edge>
+    </edges>
+  </graph>
+</gexf>
