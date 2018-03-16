@@ -4,7 +4,7 @@
     <creator>Gephi 0.9</creator>
     <description></description>
   </meta>
-  <graph defaultedgetype="directed" mode="dynamic">
+  <graph defaultedgetype="directed" mode="static">
     <attributes class="node" mode="static">
       <attribute id="natura" title="NATURA" type="string"></attribute>
     </attributes>
@@ -13,7 +13,7 @@
         <attvalues>
           <attvalue for="natura" value="JOB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
+        <viz:size value="30.0"></viz:size>
         <viz:position x="-113.66058" y="-201.44865"></viz:position>
         <viz:color r="255" g="129" b="66"></viz:color>
       </node>
@@ -21,7 +21,7 @@
         <attvalues>
           <attvalue for="natura" value="TR"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
+        <viz:size value="20.0"></viz:size>
         <viz:position x="485.12827" y="163.89098"></viz:position>
         <viz:color r="66" g="187" b="255"></viz:color>
       </node>
@@ -29,7 +29,7 @@
         <attvalues>
           <attvalue for="natura" value="JOB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
+        <viz:size value="30.0"></viz:size>
         <viz:position x="-234.54803" y="-22.045729"></viz:position>
         <viz:color r="255" g="129" b="66"></viz:color>
       </node>
@@ -37,7 +37,7 @@
         <attvalues>
           <attvalue for="natura" value="TR"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
+        <viz:size value="20.0"></viz:size>
         <viz:position x="124.52792" y="132.796"></viz:position>
         <viz:color r="66" g="187" b="255"></viz:color>
       </node>
