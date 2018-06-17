@@ -48,32 +48,32 @@
 
 
   var terra_nodes = new vis.DataSet([
-{id:  1, label: 'iam_operations_secret', title: 'module.iam_operations.output.iam_operations_secret', group: 'var'},
-{id:  2, label: 'iam_operations_access', title: 'module.iam_operations.output.iam_operations_access', group: 'var'},
-{id:  3, label: 'security_group_id', title: 'module.security_group_ecs.output.security_group_id', group: 'var'},
-{id:  4, label: 'subnet_id', title: 'module.ecs_subnet.output.subnet_id', group: 'var'},
-{id:  5, label: 'aurora_cluster_endpoint', title: 'module.aurora_cluster.output.aurora_cluster_endpoint', group: 'var'},
-{id:  6, label: 'role_arn', title: 'module.logstash-role.output.role_arn', group: 'var'},
-{id:  7, label: 'savestate', title: 'module.sonda_schedetitolo_sql.aws_dynamodb_table.savestate', group: 'var'},
+{id:  1, label: 'iam_operations_secret', title: 'module.iam_operations.output.iam_operations_secret', group: 'inputvar'},
+{id:  2, label: 'iam_operations_access', title: 'module.iam_operations.output.iam_operations_access', group: 'inputvar'},
+{id:  3, label: 'security_group_id', title: 'module.security_group_ecs.output.security_group_id', group: 'inputvar'},
+{id:  4, label: 'subnet_id', title: 'module.ecs_subnet.output.subnet_id', group: 'inputvar'},
+{id:  5, label: 'aurora_cluster_endpoint', title: 'module.aurora_cluster.output.aurora_cluster_endpoint', group: 'inputvar'},
+{id:  6, label: 'role_arn', title: 'module.logstash-role.output.role_arn', group: 'inputvar'},
+{id:  7, label: 'savestate', title: 'module.sonda_schedetitolo_sql.aws_dynamodb_table.savestate', group: 'inputvar'},
 {id:  8, label: 'logstash-sql', title: 'module.sonda_schedetitolo_sql.aws_lambda_function.logstash-sql', group: 'lambda'},
-{id:  9, label: 'thezip', title: 'module.sonda_schedetitolo_sql.data.archive_file.thezip'},
-{id: 10, label: 'lambda_arn', title: 'module.sonda_schedetitolo_sql.output.lambda_arn', group: 'lambda'},
-{id: 11, label: 'lambda_name', title: 'module.sonda_schedetitolo_sql.output.lambda_name', group: 'lambda'},
-{id: 12, label: 'access_key', title: 'module.sonda_schedetitolo_sql.var.access_key'},
-{id: 13, label: 'database_dbname', title: 'module.sonda_schedetitolo_sql.var.database_dbname'},
-{id: 14, label: 'database_host', title: 'module.sonda_schedetitolo_sql.var.database_host'},
-{id: 15, label: 'database_password', title: 'module.sonda_schedetitolo_sql.var.database_password'},
-{id: 16, label: 'database_username', title: 'module.sonda_schedetitolo_sql.var.database_username'},
-{id: 17, label: 'es_endpoint', title: 'module.sonda_schedetitolo_sql.var.es_endpoint'},
-{id: 18, label: 'es_region', title: 'module.sonda_schedetitolo_sql.var.es_region'},
-{id: 19, label: 'owner', title: 'module.sonda_schedetitolo_sql.var.owner'},
-{id: 20, label: 'region', title: 'module.sonda_schedetitolo_sql.var.region'},
-{id: 21, label: 'rolearn', title: 'module.sonda_schedetitolo_sql.var.rolearn'},
-{id: 22, label: 'secret_key', title: 'module.sonda_schedetitolo_sql.var.secret_key'},
-{id: 23, label: 'security_group_id', title: 'module.sonda_schedetitolo_sql.var.security_group_id'},
-{id: 24, label: 'subnet_list', title: 'module.sonda_schedetitolo_sql.var.subnet_list'},
-{id: 25, label: 'timeout', title: 'module.sonda_schedetitolo_sql.var.timeout'},
-{id: 26, label: 'name', title: 'module.sonda_schedetitolo_sql.var.name'},
+{id:  9, label: 'thezip', title: 'module.sonda_schedetitolo_sql.data.archive_file.thezip', group: 'othervar'},
+{id: 10, label: 'lambda_arn', title: 'module.sonda_schedetitolo_sql.output.lambda_arn', group: 'outputvar'},
+{id: 11, label: 'lambda_name', title: 'module.sonda_schedetitolo_sql.output.lambda_name', group: 'outputvar'},
+{id: 12, label: 'access_key', title: 'module.sonda_schedetitolo_sql.var.access_key', group: 'othervar'},
+{id: 13, label: 'database_dbname', title: 'module.sonda_schedetitolo_sql.var.database_dbname', group: 'othervar'},
+{id: 14, label: 'database_host', title: 'module.sonda_schedetitolo_sql.var.database_host', group: 'othervar'},
+{id: 15, label: 'database_password', title: 'module.sonda_schedetitolo_sql.var.database_password', group: 'othervar'},
+{id: 16, label: 'database_username', title: 'module.sonda_schedetitolo_sql.var.database_username', group: 'othervar'},
+{id: 17, label: 'es_endpoint', title: 'module.sonda_schedetitolo_sql.var.es_endpoint', group: 'othervar'},
+{id: 18, label: 'es_region', title: 'module.sonda_schedetitolo_sql.var.es_region', group: 'othervar'},
+{id: 19, label: 'owner', title: 'module.sonda_schedetitolo_sql.var.owner', group: 'othervar'},
+{id: 20, label: 'region', title: 'module.sonda_schedetitolo_sql.var.region', group: 'othervar'},
+{id: 21, label: 'rolearn', title: 'module.sonda_schedetitolo_sql.var.rolearn', group: 'othervar'},
+{id: 22, label: 'secret_key', title: 'module.sonda_schedetitolo_sql.var.secret_key', group: 'othervar'},
+{id: 23, label: 'security_group_id', title: 'module.sonda_schedetitolo_sql.var.security_group_id', group: 'othervar'},
+{id: 24, label: 'subnet_list', title: 'module.sonda_schedetitolo_sql.var.subnet_list', group: 'othervar'},
+{id: 25, label: 'timeout', title: 'module.sonda_schedetitolo_sql.var.timeout', group: 'othervar'},
+{id: 26, label: 'name', title: 'module.sonda_schedetitolo_sql.var.name', group: 'othervar'},
 {id: 27, label: 'var.rds_master_dbname', title: 'var.rds_master_dbname'},
 {id: 28, label: 'var.rds_master_password', title: 'var.rds_master_password'},
 {id: 29, label: 'var.rds_master_username', title: 'var.rds_master_username'},
@@ -81,16 +81,14 @@
 {id: 31, label: 'var.es_region', title: 'var.es_region'},
 {id: 32, label: 'var.owner', title: 'var.owner'},
 {id: 33, label: 'var.region', title: 'var.region'},
-{id: 34, label: 'provider.archive (close)', title: 'provider.archive (close)'},
-{id: 35, label: 'provider.aws (close)', title: 'provider.aws (close)'},
-{id: 36, label: 'provider.aws', title: 'provider.aws'},
-{id: 37, label: 'provider.archive', title: 'provider.archive'}
+{id: 34, label: 'provider.archive', title: 'provider.archive (close)'},
+{id: 35, label: 'provider.aws', title: 'provider.aws (close)'}
   ]);
 
   var terra_edges = new vis.DataSet([
 {from: 7 , to:  26},
 {from: 7 , to:  19},
-{from: 7 , to:  36},
+{from: 7 , to:  35},
 {from: 8 , to:  7},
 {from: 8 , to:  9},
 {from: 8 , to:  12},
@@ -107,7 +105,7 @@
 {from: 8 , to:  24},
 {from: 8 , to:  25},
 {from: 9 , to:  26},
-{from: 9 , to:  37},
+{from: 9 , to:  34},
 {from: 10 , to:  8},
 {from: 11 , to:  8},
 {from: 13 , to:  27},
@@ -161,21 +159,37 @@
             icon: {
               face: 'FontAwesome',
               code: '\uf013',
-              size: 25,
+              size: 35,
               color: '#aa00ff'
             }
           },
-          var: {
+          inputvar: {
             shape: 'icon',
             icon: {
               face: 'FontAwesome',
               code: '\uf1e6',
-              size: 25,
+              size: 35,
+              color: '#aa00ff'
+            }
+          },
+          outputvar: {
+            shape: 'icon',
+            icon: {
+              face: 'FontAwesome',
+              code: '\uf2f5',
+              size: 35,
+              color: '#aa00ff'
+            }
+          },
+          othervar: {
+            shape: 'icon',
+            icon: {
+              face: 'FontAwesome',
+              code: '\uf044',
+              size: 35,
               color: '#aa00ff'
             }
           }
-
-          
         }
   };
 
