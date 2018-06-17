@@ -48,17 +48,17 @@
 
 
   var terra_nodes = new vis.DataSet([
-{id:  1, label: 'iam_operations_secret', title: 'module.iam_operations.output.iam_operations_secret'},
-{id:  2, label: 'iam_operations_access', title: 'module.iam_operations.output.iam_operations_access'},
-{id:  3, label: 'security_group_id', title: 'module.security_group_ecs.output.security_group_id'},
-{id:  4, label: 'subnet_id', title: 'module.ecs_subnet.output.subnet_id'},
-{id:  5, label: 'aurora_cluster_endpoint', title: 'module.aurora_cluster.output.aurora_cluster_endpoint'},
-{id:  6, label: 'role_arn', title: 'module.logstash-role.output.role_arn'},
-{id:  7, label: 'savestate', title: 'module.sonda_schedetitolo_sql.aws_dynamodb_table.savestate'},
-{id:  8, label: 'logstash-sql', title: 'module.sonda_schedetitolo_sql.aws_lambda_function.logstash-sql'},
+{id:  1, label: 'iam_operations_secret', title: 'module.iam_operations.output.iam_operations_secret', group: 'var'},
+{id:  2, label: 'iam_operations_access', title: 'module.iam_operations.output.iam_operations_access', group: 'var'},
+{id:  3, label: 'security_group_id', title: 'module.security_group_ecs.output.security_group_id', group: 'var'},
+{id:  4, label: 'subnet_id', title: 'module.ecs_subnet.output.subnet_id', group: 'var'},
+{id:  5, label: 'aurora_cluster_endpoint', title: 'module.aurora_cluster.output.aurora_cluster_endpoint', group: 'var'},
+{id:  6, label: 'role_arn', title: 'module.logstash-role.output.role_arn', group: 'var'},
+{id:  7, label: 'savestate', title: 'module.sonda_schedetitolo_sql.aws_dynamodb_table.savestate', group: 'var'},
+{id:  8, label: 'logstash-sql', title: 'module.sonda_schedetitolo_sql.aws_lambda_function.logstash-sql', group: 'lambda'},
 {id:  9, label: 'thezip', title: 'module.sonda_schedetitolo_sql.data.archive_file.thezip'},
-{id: 10, label: 'lambda_arn', title: 'module.sonda_schedetitolo_sql.output.lambda_arn'},
-{id: 11, label: 'lambda_name', title: 'module.sonda_schedetitolo_sql.output.lambda_name'},
+{id: 10, label: 'lambda_arn', title: 'module.sonda_schedetitolo_sql.output.lambda_arn', group: 'lambda'},
+{id: 11, label: 'lambda_name', title: 'module.sonda_schedetitolo_sql.output.lambda_name', group: 'lambda'},
 {id: 12, label: 'access_key', title: 'module.sonda_schedetitolo_sql.var.access_key'},
 {id: 13, label: 'database_dbname', title: 'module.sonda_schedetitolo_sql.var.database_dbname'},
 {id: 14, label: 'database_host', title: 'module.sonda_schedetitolo_sql.var.database_host'},
@@ -155,7 +155,27 @@
               size: 50,
               color: '#aa00ff'
             }
+          },
+          lambda: {
+            shape: 'icon',
+            icon: {
+              face: 'FontAwesome',
+              code: '\uf013',
+              size: 25,
+              color: '#aa00ff'
+            }
+          },
+          var: {
+            shape: 'icon',
+            icon: {
+              face: 'FontAwesome',
+              code: '\uf1e6',
+              size: 25,
+              color: '#aa00ff'
+            }
           }
+
+          
         }
   };
 
