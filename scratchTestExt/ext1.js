@@ -171,7 +171,7 @@ SomeBlocks.prototype.getInfo = function () {
 
         // Optional: translations
         translation_map: {
-            de: {
+            it: {
                 'extensionName': 'Einige Blöcke',
                 'myReporter': 'Buchstabe [LETTER_NUM] von [TEXT]',
                 'myReporter.TEXT_default': 'Text',
@@ -182,9 +182,6 @@ SomeBlocks.prototype.getInfo = function () {
 
                 // This message contains ICU placeholders (see `myReporter()` below)
                 'myReporter.result': 'Buchstabe {LETTER_NUM} von {TEXT} ist {LETTER}.'
-            },
-            it: {
-                // ...
             }
         },
 
