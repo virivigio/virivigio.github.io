@@ -384,7 +384,8 @@ class Utilities {
 }
 
 var s = document.createElement('script');
-    s.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
-    document.body.appendChild(s);
-
+console.log("s:"+s);
+s.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
+document.body.appendChild(s);
+console.log("here");
 Scratch.extensions.register(new Utilities());
