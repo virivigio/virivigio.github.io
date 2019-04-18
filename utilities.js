@@ -132,14 +132,14 @@ class Utilities {
 //console.log("s:"+s);
 //s.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
 //document.body.appendChild(s);
-console.log("here1");
-try {
-    importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
-    console.log("here2a");
-} catch (e) {
-    if (e) console.log("Error: "+e);
-    console.log("here2b");
-}
+//console.log("here1");
+//try {
+//    importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
+//    console.log("here2a");
+//} catch (e) {
+//    if (e) console.log("Error: "+e);
+//    console.log("here2b");
+//}
 
 Scratch.extensions.register(new Utilities());
 console.log("here3");
