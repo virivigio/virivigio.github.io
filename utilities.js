@@ -1,10 +1,7 @@
-class Utilities {
+class MqttUtilities {
 
     constructor() {
-        /**
-         * The MQTT PAHO client
-         * @type {Paho.MQTT.Client}
-         */
+
         this.scratchMqttClient = null;
 
         this.SERVER = null;
@@ -14,8 +11,8 @@ class Utilities {
 
     getInfo() {
         return {
-            id: 'utilities',
-            name: 'Utlities',
+            id: 'mqttUtilities',
+            name: 'MqttUtilities',
 
             colour: '#8BC34A',
             colourSecondary: '#7CB342',
@@ -123,13 +120,13 @@ class Utilities {
 
 console.log("here1");
 
-//try {
-//    importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
-//    console.log("here2a");
-//} catch (e) {
-//    if (e) console.log("Error: "+e);
-//    console.log("here2b");
-//}
+try {
+    importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
+    console.log("here2a");
+} catch (e) {
+    if (e) console.log("Error: "+e);
+    console.log("here2b");
+}
 
 Scratch.extensions.register(new Utilities());
 console.log("here3");
