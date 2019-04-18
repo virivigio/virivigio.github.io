@@ -137,7 +137,7 @@ try {
     importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
     console.log("here2a");
 } catch (e) {
-    console.log("Error: "+e.toString());
+    if (e) console.log("Error: "+e);
     console.log("here2b");
 }
 
