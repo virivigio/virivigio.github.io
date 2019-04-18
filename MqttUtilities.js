@@ -118,15 +118,15 @@ class MqttUtilities {
 }
 
 
-console.log("here1");
+console.log("Before loading PAHO source");
 
 try {
     importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
-    console.log("here2a");
+    console.log("PAHO source loaded");
 } catch (e) {
-    if (e) console.log("Error: "+e);
-    console.log("here2b");
+    console.log("PAHO source loading returned an error: ");
+    console.log(e);
 }
 
-Scratch.extensions.register(new Utilities());
-console.log("here3");
+Scratch.extensions.register(new MqttUtilities());
+console.log("End of MqttUtilities");
