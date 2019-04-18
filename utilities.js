@@ -134,7 +134,7 @@ class Utilities {
 //document.body.appendChild(s);
 console.log("here1");
 try {
-    self.importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
+    importScripts('https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js');
     console.log("here2a");
 } catch (e) {
     console.log("Error: "+e.toString());
