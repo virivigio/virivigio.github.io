@@ -12,6 +12,7 @@
 		<h1 style="font-size:100px; color:gray; margin:10px;">Animation Test</h1>
 		<button onclick="on_click_Button1()">Dataset 1</button>
 		<button onclick="on_click_Button2()">Dataset 2</button>
+		<button onclick="on_click_Button3()">Dataset 3</button>
 		<p/>
 
 		<script type="text/javascript">
@@ -43,7 +44,26 @@
         					{x: 6, y: 6},
         					{x: 7, y: 6}
       					];      		
-			
+
+			var padding3 = 30;
+      		var dataset3 = [
+        					{x: 1, y: 8},
+        					{x: 2, y: 6.5},
+        					{x: 3, y: 6.1},
+        					{x: 4, y: 7},
+        					{x: 5, y: 7.8},
+        					{x: 6, y: 6.5},
+        					{x: 7, y: 7.1}
+      					];      		
+      		var dataset3_vuoto = [
+        					{x: 1, y: 6},
+        					{x: 2, y: 6},
+        					{x: 3, y: 6},
+        					{x: 4, y: 6},
+        					{x: 5, y: 6},
+        					{x: 6, y: 6},
+        					{x: 7, y: 6}
+      					]; 			
 			
 			var svg = d3.select("body")
 						.append("svg")
@@ -69,7 +89,7 @@
 					return "rgb(0, 0, " + Math.round(d * 10) + ")";
 			   });;
 
-			//second chart
+			//second and third charts
 		    var x = d3.scaleLinear().range([padding2, width - padding2 * 2]);
       		//x.domain([0, d3.max(dataset2, function(d) { return d.x }) ]);
       		x.domain([0, 0]);
@@ -139,6 +159,7 @@
             		   .attr("stroke", "steelblue")
             		   .attr("stroke-width", 3)
          			   .attr("opacity", 0);
+     			   
 			}
 
 			function on_click_Button2() {
@@ -174,8 +195,43 @@
             		   .attr("stroke", "steelblue")
             		   .attr("stroke-width", 3)
          			   .attr("opacity", 1);
+        			   
 				}
-			
+
+			function on_click_Button3() {
+					//alert("third")
+
+					svg.selectAll("rect")
+					   .data(dataset1_vuoto)
+					   .transition("rect").duration(600)
+					   .attr("y", function(d) {
+					   		return height - (d * 4);
+					   })
+					   .attr("height", function(d) {
+					   		return d * 4;
+					   })
+					   .attr("fill", function(d) {
+							return "rgb(0, 0, " + Math.round(d * 10) + ")";
+					   });
+
+					x.domain([0, d3.max(dataset2, function(d) { return d.x }) ]);
+					y.domain([6, d3.max(dataset2, function(d) { return d.y }) ]);
+
+					svg.selectAll(".myXaxis").transition("myXaxis").duration(600).attr("opacity", 1).call(d3.axisBottom().scale(x));
+					svg.selectAll(".myYaxis").transition("myYaxis").duration(600).attr("opacity", 1).call(d3.axisLeft().scale(y));
+
+		      		svg.selectAll(".myLine")
+        			   .datum(dataset3)
+         			   .transition("path")
+         			   .duration(600)
+         			   .attr("d", d3.line()
+            				.x(function(d) { return x(d.x); })
+            				.y(function(d) { return y(d.y); }))
+            		   .attr("fill", "none")
+            		   .attr("stroke", "steelblue")
+            		   .attr("stroke-width", 3)
+         			   .attr("opacity", 1);         			   
+				}			
 		</script>
 	</body>
 </html>
